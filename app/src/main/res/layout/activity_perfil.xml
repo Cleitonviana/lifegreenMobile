@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Campo Nome -->
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo Telefone -->
+        <EditText
+            android:id="@+id/etTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo E-mail -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo Senha -->
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo CEP e Botão Buscar Endereço -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/etCep"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:hint="CEP"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnBuscarEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscar" />
+        </LinearLayout>
+
+        <!-- Campo Logradouro -->
+        <EditText
+            android:id="@+id/etLogradouro"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Logradouro"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo Número -->
+        <EditText
+            android:id="@+id/etNumero"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Número"
+            android:inputType="number"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo Complemento -->
+        <EditText
+            android:id="@+id/etComplemento"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Complemento"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo Localidade -->
+        <EditText
+            android:id="@+id/etLocalidade"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Localidade"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo Bairro -->
+        <EditText
+            android:id="@+id/etBairro"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Bairro"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo Estado -->
+        <EditText
+            android:id="@+id/etEstado"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Estado"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botão Salvar Alterações -->
+        <Button
+            android:id="@+id/btnSalvarAlteracoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar Alterações"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Botão Voltar ao Início -->
+        <Button
+            android:id="@+id/btnVoltarInicio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Voltar ao Início" />
+        <!-- Botão Listar Dados -->
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Excluir usuário"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
