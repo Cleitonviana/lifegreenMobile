@@ -10,42 +10,47 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/lifegreen"
         android:padding="16dp">
 
         <!-- Campo Nome -->
         <EditText
             android:id="@+id/etNome"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:hint="Nome"
             android:inputType="textPersonName"
+            android:background="@drawable/rounded_edittext"
             android:layout_marginBottom="8dp" />
 
         <!-- Campo Telefone -->
         <EditText
             android:id="@+id/etTelefone"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:hint="Telefone"
             android:inputType="phone"
+            android:background="@drawable/rounded_edittext"
             android:layout_marginBottom="8dp" />
 
         <!-- Campo E-mail -->
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
+            android:background="@drawable/rounded_edittext"
             android:layout_marginBottom="8dp" />
 
         <!-- Campo Senha -->
         <EditText
             android:id="@+id/etSenha"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:hint="Senha"
             android:inputType="textPassword"
+            android:background="@drawable/rounded_edittext"
             android:layout_marginBottom="8dp" />
 
         <!-- Campo CEP e Botão Buscar Endereço -->
@@ -58,10 +63,11 @@
             <EditText
                 android:id="@+id/etCep"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="55dp"
                 android:hint="CEP"
                 android:inputType="number"
                 android:layout_weight="1"
+                android:background="@drawable/rounded_edittext"
                 android:layout_marginEnd="8dp" />
 
             <Button
@@ -75,54 +81,60 @@
         <EditText
             android:id="@+id/etLogradouro"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:hint="Logradouro"
             android:inputType="text"
+            android:background="@drawable/rounded_edittext"
             android:layout_marginBottom="8dp" />
 
         <!-- Campo Número -->
         <EditText
             android:id="@+id/etNumero"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:hint="Número"
             android:inputType="number"
+            android:background="@drawable/rounded_edittext"
             android:layout_marginBottom="8dp" />
 
         <!-- Campo Complemento -->
         <EditText
             android:id="@+id/etComplemento"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:hint="Complemento"
             android:inputType="text"
+            android:background="@drawable/rounded_edittext"
             android:layout_marginBottom="8dp" />
 
         <!-- Campo Localidade -->
         <EditText
             android:id="@+id/etLocalidade"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:hint="Localidade"
             android:inputType="text"
+            android:background="@drawable/rounded_edittext"
             android:layout_marginBottom="8dp" />
 
         <!-- Campo Bairro -->
         <EditText
             android:id="@+id/etBairro"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:hint="Bairro"
             android:inputType="text"
+            android:background="@drawable/rounded_edittext"
             android:layout_marginBottom="8dp" />
 
         <!-- Campo Estado -->
         <EditText
             android:id="@+id/etEstado"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="55dp"
             android:hint="Estado"
             android:inputType="text"
+            android:background="@drawable/rounded_edittext"
             android:layout_marginBottom="16dp" />
 
         <!-- Botão Salvar Alterações -->

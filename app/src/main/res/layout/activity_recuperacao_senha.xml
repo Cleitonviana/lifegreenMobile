@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/lifegreen"
         android:padding="16dp">
 
         <!-- Campo CPF com botão "Enviar Código" -->
@@ -26,6 +27,7 @@
                 android:layout_weight="1"
                 android:hint="Digite seu CPF"
                 android:inputType="number"
+                android:background="@drawable/rounded_edittext"
                 android:padding="10dp" />
 
             <Button
@@ -47,6 +49,7 @@
             android:layout_height="48dp"
             android:hint="Digite o código recebido"
             android:inputType="number"
+            android:background="@drawable/rounded_edittext"
             android:padding="10dp" />
 
         <!-- Espaçamento -->
@@ -61,6 +64,7 @@
             android:layout_height="48dp"
             android:hint="Digite a nova senha"
             android:inputType="textPassword"
+            android:background="@drawable/rounded_edittext"
             android:padding="10dp" />
 
         <!-- Espaçamento -->

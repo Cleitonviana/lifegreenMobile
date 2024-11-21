@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/lifegreen"
         android:padding="16dp">
 
         <ScrollView
@@ -241,9 +242,10 @@
                 android:layout_height="wrap_content"
                 android:text="Total: R$ 0.00"
                 android:textSize="18sp"
-                android:gravity="end"
+                android:gravity="left"
                 android:textStyle="bold"
-                android:layout_marginBottom="16dp" />
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="1dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"

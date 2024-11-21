@@ -159,6 +159,7 @@ public class home extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(home.this, carrinho.class);
                 intent.putExtra("carrinho", carrinho);// Envia o carrinho atual para a tela "Carrinho"
+                intent.putExtra("cpf", cpf);
                 startActivity(intent);
             }
         });

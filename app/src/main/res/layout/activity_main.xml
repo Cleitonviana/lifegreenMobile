@@ -7,14 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/lifegreen"
         android:padding="16dp"
         android:gravity="center">
+
+        <!-- Texto Life Green no topo -->
+        <TextView
+            android:id="@+id/txtLifeGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Life Green"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#BA000000"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/robotoblackitalic" />
 
         <!-- Campo CPF -->
         <EditText
@@ -23,6 +36,7 @@
             android:layout_height="48dp"
             android:hint="CPF"
             android:inputType="number"
+            android:background="@drawable/bordas"
             android:maxLength="11"
             android:layout_marginBottom="16dp" />
 
@@ -32,6 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Senha"
+            android:background="@drawable/bordas"
             android:inputType="textPassword"
             android:layout_marginBottom="24dp" />
 
@@ -41,6 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
+            android:background="@drawable/button_style"
             android:layout_marginBottom="8dp" />
 
         <!-- Botão Cadastrar -->
@@ -49,6 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Realizar Cadastro"
+            android:background="@drawable/button_style"
             android:layout_marginBottom="8dp" />
 
         <!-- Botão Esqueci Minha Senha -->
@@ -56,8 +73,8 @@
             android:id="@+id/btnEsqueciSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Esqueci minha senha"
-             />
+            android:background="@drawable/button_style"
+            android:text="Esqueci minha senha" />
 
     </LinearLayout>
 

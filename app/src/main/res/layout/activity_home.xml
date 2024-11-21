@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lifegreen"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -24,14 +25,16 @@
                 android:layout_height="48dp"
                 android:src="@drawable/ic_boneco"
                 android:layout_alignParentStart="true"
+                android:background="@drawable/bordas"
                 android:contentDescription="Perfil" />
 
             <ImageView
                 android:id="@+id/iconCarrinho"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/ic_carrinho"
+                android:src="@drawable/carrinho"
                 android:layout_alignParentEnd="true"
+                android:background="@drawable/bordas"
                 android:contentDescription="Carrinho" />
         </RelativeLayout>
 
