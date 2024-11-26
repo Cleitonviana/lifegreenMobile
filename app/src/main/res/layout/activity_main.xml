@@ -8,72 +8,70 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/home_fazenda"
+        android:gravity="center"
         android:orientation="vertical"
-        android:background="@drawable/lifegreen"
         android:padding="16dp"
-        android:gravity="center">
+        tools:layout_editor_absoluteX="-76dp"
+        tools:layout_editor_absoluteY="-200dp">
 
         <!-- Texto Life Green no topo -->
-        <TextView
-            android:id="@+id/txtLifeGreen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Life Green"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            android:textColor="#BA000000"
-        android:gravity="center"
-        android:layout_marginBottom="40dp"
-        android:fontFamily="@font/robotoblackitalic" />
 
         <!-- Campo CPF -->
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="411dp"
+            android:layout_height="286dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/logo" />
+
         <EditText
             android:id="@+id/txtCpf"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bordas"
             android:hint="CPF"
             android:inputType="number"
-            android:background="@drawable/bordas"
-            android:maxLength="11"
-            android:layout_marginBottom="16dp" />
+            android:maxLength="11" />
 
         <!-- Campo Senha -->
         <EditText
             android:id="@+id/txtSenha"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="Senha"
+            android:layout_height="60dp"
+            android:layout_marginBottom="26dp"
             android:background="@drawable/bordas"
-            android:inputType="textPassword"
-            android:layout_marginBottom="24dp" />
+            android:hint="Senha"
+            android:inputType="textPassword" />
 
         <!-- Botão Login -->
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:background="@drawable/button_style"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#006400"
+            android:text="Login" />
 
         <!-- Botão Cadastrar -->
         <Button
             android:id="@+id/btnRealizarCadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Realizar Cadastro"
-            android:background="@drawable/button_style"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#26B1EF"
+            android:text="Realizar Cadastro" />
 
         <!-- Botão Esqueci Minha Senha -->
         <Button
             android:id="@+id/btnEsqueciSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_style"
+            android:backgroundTint="#A22600"
             android:text="Esqueci minha senha" />
 
     </LinearLayout>

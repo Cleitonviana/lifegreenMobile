@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lifegreen"
+    android:background="@drawable/fazenda_urbana"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/iconPerfil"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:src="@drawable/ic_boneco"
                 android:layout_alignParentStart="true"
                 android:background="@drawable/bordas"
@@ -71,6 +71,7 @@
                         android:id="@+id/btnFilter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="#E15243"
                         android:text="Filtrar" />
                 </LinearLayout>
 
@@ -81,13 +82,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@android:color/darker_gray"
+                    android:background="@drawable/bordas"
                     android:layout_marginBottom="8dp">
 
                     <ImageView
                         android:id="@+id/ivProductImage1"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:background="@drawable/bordas"
                         android:src="@drawable/ic_placeholder"
                         android:layout_marginEnd="8dp" />
 
@@ -125,6 +127,7 @@
                     android:id="@+id/btnComprar1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#006400"
                     android:text="Adicionar ao carrinho" />
                 <!-- Produto 2 -->
                 <LinearLayout
@@ -133,13 +136,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@android:color/darker_gray"
+                    android:background="@drawable/bordas"
                     android:layout_marginBottom="8dp">
 
                     <ImageView
                         android:id="@+id/ivProductImage2"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:background="@drawable/bordas"
                         android:src="@drawable/ic_placeholder"
                         android:layout_marginEnd="8dp" />
 
@@ -174,6 +178,7 @@
                     android:id="@+id/btnComprar2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#006400"
                     android:text="Adicionar ao carrinho" />
                 <!-- Produto 3 -->
                 <LinearLayout
@@ -182,13 +187,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@android:color/darker_gray"
+                    android:background="@drawable/bordas"
                     android:layout_marginBottom="8dp">
 
                     <ImageView
                         android:id="@+id/ivProductImage3"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:background="@drawable/bordas"
                         android:src="@drawable/ic_placeholder"
                         android:layout_marginEnd="8dp" />
 
@@ -223,6 +229,7 @@
                     android:id="@+id/btnComprar3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#006400"
                     android:text="Adicionar ao carrinho" />
                 <!-- Produto 4 -->
                 <LinearLayout
@@ -231,12 +238,13 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@android:color/darker_gray">
+                    android:background="@drawable/bordas">
 
                     <ImageView
                         android:id="@+id/ivProductImage4"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:background="@drawable/bordas"
                         android:src="@drawable/ic_placeholder"
                         android:layout_marginEnd="8dp" />
 
@@ -272,6 +280,7 @@
                     android:id="@+id/btnComprar4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#006400"
                     android:text="Adicionar ao carrinho" />
             </LinearLayout>
         </ScrollView>

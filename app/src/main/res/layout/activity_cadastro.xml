@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/lifegreen"
+        android:background="@drawable/fazenda_urbana"
         tools:ignore="MissingConstraints">
 
         <!-- Seção de dados pessoais -->
@@ -25,7 +25,7 @@
             <EditText
                 android:id="@+id/txtNome"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:hint="Nome"
                 android:background="@drawable/rounded_edittext"
@@ -35,7 +35,7 @@
             <EditText
                 android:id="@+id/txtCpf"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:hint="CPF"
                 android:background="@drawable/rounded_edittext"
@@ -52,7 +52,7 @@
             <EditText
                 android:id="@+id/txtTelefone"
                 android:layout_width="0dp"
-                android:layout_height="55dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:hint="Telefone"
                 android:inputType="phone"
@@ -62,7 +62,7 @@
             <EditText
                 android:id="@+id/txtEmail"
                 android:layout_width="0dp"
-                android:layout_height="55dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:hint="Email"
                 android:background="@drawable/rounded_edittext"
@@ -72,7 +72,7 @@
         <EditText
             android:id="@+id/txtSenha"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="60dp"
             android:hint="Senha"
             android:inputType="textPassword"
             android:background="@drawable/rounded_edittext"
@@ -88,7 +88,7 @@
             <EditText
                 android:id="@+id/txtCep"
                 android:layout_width="0dp"
-                android:layout_height="55dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:hint="CEP"
                 android:inputType="number"
@@ -98,6 +98,7 @@
             <Button
                 android:id="@+id/btnBuscarCep"
                 android:layout_width="wrap_content"
+                android:backgroundTint="#006400"
                 android:layout_height="wrap_content"
                 android:text="Buscar" />
         </LinearLayout>
@@ -105,7 +106,7 @@
         <EditText
             android:id="@+id/txtLogradouro"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="60dp"
             android:hint="Logradouro"
             android:inputType="text"
             android:background="@drawable/rounded_edittext"
@@ -121,7 +122,7 @@
             <EditText
                 android:id="@+id/txtNumero"
                 android:layout_width="0dp"
-                android:layout_height="55dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:hint="Número"
                 android:inputType="number"
@@ -131,7 +132,7 @@
             <EditText
                 android:id="@+id/txtComplemento"
                 android:layout_width="0dp"
-                android:layout_height="55dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:hint="Complemento"
                 android:background="@drawable/rounded_edittext"
@@ -141,7 +142,7 @@
         <EditText
             android:id="@+id/txtBairro"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="60dp"
             android:hint="Bairro"
             android:inputType="text"
             android:background="@drawable/rounded_edittext"
@@ -156,7 +157,7 @@
             <EditText
                 android:id="@+id/txtLocalidade"
                 android:layout_width="0dp"
-                android:layout_height="55dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:hint="Localidade"
                 android:inputType="text"
@@ -166,7 +167,7 @@
             <EditText
                 android:id="@+id/txtEstado"
                 android:layout_width="0dp"
-                android:layout_height="55dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:hint="Estado"
                 android:background="@drawable/rounded_edittext"
@@ -186,6 +187,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Cadastrar"
+                android:backgroundTint="#006400"
                 android:layout_marginEnd="8dp" />
 
             <Button
@@ -193,6 +195,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="#A26408"
                 android:text="Voltar para o Início" />
         </LinearLayout>
     </LinearLayout>

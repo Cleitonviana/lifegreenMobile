@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/lifegreen"
+        android:background="@drawable/fazenda_urbana"
         android:padding="16dp">
 
         <ScrollView
@@ -31,13 +31,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@android:color/darker_gray"
+                    android:background="@drawable/bordas"
                     android:layout_marginBottom="8dp">
 
                     <ImageView
                         android:id="@+id/imagemprod1"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:background="@drawable/bordas"
                         android:src="@drawable/ic_placeholder"
                         android:layout_marginEnd="8dp" />
 
@@ -77,13 +78,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@android:color/darker_gray"
+                    android:background="@drawable/bordas"
                     android:layout_marginBottom="8dp">
 
                     <ImageView
                         android:id="@+id/imagemprod2"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:background="@drawable/bordas"
                         android:src="@drawable/ic_placeholder"
                         android:layout_marginEnd="8dp" />
 
@@ -122,13 +124,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@android:color/darker_gray"
+                    android:background="@drawable/bordas"
                     android:layout_marginBottom="8dp">
 
                     <ImageView
                         android:id="@+id/imagemprod3"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:background="@drawable/bordas"
                         android:src="@drawable/ic_placeholder"
                         android:layout_marginEnd="8dp" />
 
@@ -167,13 +170,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@android:color/darker_gray">
+                    android:background="@drawable/bordas">
 
                     <ImageView
                         android:id="@+id/imagemprod4"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/ic_placeholder"
+                        android:background="@drawable/bordas"
                         android:layout_marginEnd="8dp" />
 
                     <LinearLayout
@@ -203,34 +207,36 @@
                             android:text="-" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="16dp">
+                    android:layout_height="186dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/totalPedido1"
-                        android:layout_width="match_parent"
+                        android:layout_width="188dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:gravity="left"
                         android:text="Total: R$ 0.00"
                         android:textSize="18sp"
-                        android:gravity="left"
-                        android:textStyle="bold"
-                        android:background="@drawable/rounded_edittext"
-                        android:layout_marginBottom="1dp" />
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
                         android:gravity="center"
-                        android:layout_marginTop="16dp">
+                        android:orientation="horizontal">
 
                         <Button
                             android:id="@+id/botaoEditarPedido1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:backgroundTint="#E15243"
                             android:layout_weight="1"
                             android:text="Editar Pedido" />
 
@@ -243,6 +249,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:backgroundTint="#006400"
                             android:text="Confirmar" />
                     </LinearLayout>
                 </LinearLayout>

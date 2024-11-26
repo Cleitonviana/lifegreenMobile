@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/lifegreen"
+        android:background="@drawable/fazenda_urbana"
         android:padding="16dp">
 
         <!-- Campo CPF com botão "Enviar Código" -->
@@ -33,6 +33,7 @@
             <Button
                 android:id="@+id/btnEnviarCodigo"
                 android:layout_width="wrap_content"
+                android:backgroundTint="#006400"
                 android:layout_height="wrap_content"
                 android:text="Enviar Código" />
         </LinearLayout>
@@ -83,6 +84,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="#006400"
                 android:text="Alterar Senha" />
 
             <View
@@ -94,6 +96,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="#A26408"
                 android:text="Voltar ao Início" />
         </LinearLayout>
     </LinearLayout>

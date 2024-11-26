@@ -24,7 +24,7 @@ public class carrinho extends AppCompatActivity {
     private TextView nomeProduto1, nomeProduto2, nomeProduto3, nomeProduto4;
     private TextView quantidadeProduto1, quantidadeProduto2, quantidadeProduto3, quantidadeProduto4;
     private TextView precoProduto1, precoProduto2, precoProduto3, precoProduto4;
-    private Button botaoRemover1, botaoRemover2, botaoRemover3, botaoRemover4, buttonEditarPedido,buttonFinalizarPedido;
+    private Button botaoRemover1, botaoRemover2, botaoRemover3, botaoRemover4,botaoDecremento1,botaoIncremento1, botaoDecremento2, botaoIncremento2, botaoDecremento3, botaoIncremento3, botaoDecremento4, botaoIncremento4, buttonEditarPedido,buttonFinalizarPedido;
     private TextView totalPedido;
     private ArrayList<Produto> carr;
 
@@ -54,6 +54,18 @@ public class carrinho extends AppCompatActivity {
         botaoRemover2 = findViewById(R.id.botaoRemover2);
         botaoRemover3 = findViewById(R.id.botaoRemover3);
         botaoRemover4 = findViewById(R.id.botaoRemover4);
+        botaoDecremento1 = findViewById(R.id.botaoDecrementarProduto1);
+        botaoDecremento1.setEnabled(false);
+        botaoIncremento1 = findViewById(R.id.botaoIncrementarProduto1);
+        botaoDecremento2 = findViewById(R.id.botaoDecrementarProduto2);
+        botaoDecremento2.setEnabled(false);
+        botaoIncremento2 = findViewById(R.id.botaoIncrementarProduto2);
+        botaoDecremento3 = findViewById(R.id.botaoDecrementarProduto3);
+        botaoDecremento3.setEnabled(false);
+        botaoIncremento3 = findViewById(R.id.botaoIncrementarProduto3);
+        botaoDecremento4 = findViewById(R.id.botaoDecrementarProduto4);
+        botaoDecremento4.setEnabled(false);
+        botaoIncremento4 = findViewById(R.id.botaoIncrementarProduto4);
         buttonEditarPedido = findViewById(R.id.botaoEditarPedido);
         buttonFinalizarPedido = findViewById(R.id.botaoFinalizarPedido);
         totalPedido = findViewById(R.id.totalPedido);
@@ -84,35 +96,363 @@ public class carrinho extends AppCompatActivity {
         botaoRemover1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Produto produto = new Produto("Alface", 0, 3.00); // Produto referente ao slot 1
-                removerDoCarrinho(produto, 1);
+                for(Produto p : carr){
+                    if(nomeProduto1.getText() == p.getNome()){
+                        removerDoCarrinho(p, 1);
+                        break;
+                    }
+                }
 
             }
         });
         botaoRemover2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Produto produto = new Produto("Couve", 0, 4.00); // Produto referente ao slot 2
-                removerDoCarrinho(produto, 2);
+                for(Produto p : carr){
+                    if(nomeProduto2.getText() == p.getNome()){
+                        removerDoCarrinho(p, 2);
+                        break;
+                    }
+                }
             }
         });
 
         botaoRemover3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Produto produto = new Produto("Cebolinha", 0, 2.50); // Produto referente ao slot 3
-                removerDoCarrinho(produto, 3);
+                for(Produto p : carr){
+                    if(nomeProduto3.getText() == p.getNome()){
+                        removerDoCarrinho(p, 3);
+                        break;
+                    }
+                }
             }
         });
 
         botaoRemover4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Produto produto = new Produto("Cenoura", 0, 5.50); // Produto referente ao slot 4
-                removerDoCarrinho(produto, 4);
+               for(Produto p : carr){
+                   if(nomeProduto4.getText() == p.getNome()){
+                       removerDoCarrinho(p, 4);
+                       break;
+                   }
+               }
             }
         });
 
+        botaoDecremento1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (Produto p : carr) {
+                    if (nomeProduto1.getText() == p.getNome()) {
+                        // Produto já existe no carrinho, só atualizar a quantidade
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto1.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento1.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto1.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto1.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento1.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto1.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto1.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento1.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto1.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto1.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento1.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    }
+                }
+
+                }
+
+        });
+
+        botaoIncremento1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (Produto p : carr) {
+                    if (nomeProduto1.getText() == p.getNome()) {
+                        // Produto já existe no carrinho, só atualizar a quantidade
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto1.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        botaoDecremento1.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    }else if (nomeProduto1.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto1.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        botaoDecremento1.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto1.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto1.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        botaoDecremento1.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto1.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto1.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        botaoDecremento1.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    }
+                }
+            }
+        });
+
+
+
+        botaoDecremento2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (Produto p : carr) {
+                    if (nomeProduto2.getText() == p.getNome()) {
+                        // Produto já existe no carrinho, só atualizar a quantidade
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto2.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento2.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    }else if (nomeProduto2.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto2.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento2.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto2.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto2.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento2.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto2.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto2.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento2.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    }
+                }
+            }
+
+        });
+
+
+        botaoIncremento2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (Produto p : carr) {
+                    if (nomeProduto2.getText() == p.getNome()) {
+                        // Produto já existe no carrinho, só atualizar a quantidade
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto2.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        botaoDecremento2.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    }else if (nomeProduto2.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto2.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        botaoDecremento2.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto2.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto2.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        botaoDecremento2.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto2.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto2.setText(String.valueOf("Quantidade: " + p.getQuantidade()));
+                        botaoDecremento2.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    }
+                }
+            }
+        });
+
+
+        botaoDecremento3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for(Produto p : carr){
+                    if (nomeProduto3.getText() ==  p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto3.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento3.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto3.getText() ==  p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto3.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento3.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto3.getText() ==  p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto3.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento3.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto3.getText() ==  p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto3.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento3.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    }
+                }
+            }
+
+        });
+
+        botaoIncremento3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (Produto p : carr){
+                    if (nomeProduto3.getText() ==  p.getNome()){
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto3.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        botaoDecremento3.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    }
+                    else if(nomeProduto3.getText() ==  p.getNome()){
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto3.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        botaoDecremento3.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    }
+                    else if(nomeProduto3.getText() ==  p.getNome()){
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto3.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        botaoDecremento3.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto3.getText() ==  p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto3.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        botaoDecremento3.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    }
+                }
+            }
+        });
+
+        botaoDecremento4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for(Produto p : carr){
+                    if (nomeProduto4.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto4.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento4.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto4.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto4.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento4.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto4.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto4.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento4.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto4.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() - 1);
+                        quantidadeProduto4.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        if(p.getQuantidade() == 1){
+                            botaoDecremento4.setEnabled(false);
+                        }
+                        atualizarInterface();
+                        break;
+                    }
+                }
+            }
+
+        });
+
+        botaoIncremento4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (Produto p : carr){
+                    if (nomeProduto4.getText() == p.getNome()){
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto4.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        botaoDecremento4.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    }
+                    else if(nomeProduto4.getText() == p.getNome()){
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto4.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        botaoDecremento4.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    }
+                    else if(nomeProduto4.getText() == p.getNome()){
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto4.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        botaoDecremento4.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    } else if (nomeProduto4.getText() == p.getNome()) {
+                        p.setQuantidade(p.getQuantidade() + 1);
+                        quantidadeProduto4.setText(String.valueOf("Quantidade:" + p.getQuantidade()));
+                        botaoDecremento4.setEnabled(true);
+                        atualizarInterface();
+                        break;
+                    }
+                }
+            }
+        });
 
 
         totalPedido.setText(String.format("Total: R$%.2f" ,CalcularTotal()));
@@ -131,25 +471,25 @@ public class carrinho extends AppCompatActivity {
                 case 0:
                     nomeProduto1.setText(produto.getNome());
                     quantidadeProduto1.setText(String.valueOf("Quantidade: " +produto.getQuantidade()));
-                    precoProduto1.setText(String.format("R$ %.2f", produto.getPreco()));
+                    precoProduto1.setText(String.format("Preço: R$ %.2f", produto.getPreco()));
                     DefinirImagens(produto, imagemProduto1);
                     break;
                 case 1:
                     nomeProduto2.setText(produto.getNome());
                     quantidadeProduto2.setText(String.valueOf("Quantidade: " +produto.getQuantidade()));
-                    precoProduto2.setText(String.format("R$ %.2f", produto.getPreco()));
+                    precoProduto2.setText(String.format("Preço: R$ %.2f", produto.getPreco()));
                     DefinirImagens(produto,imagemProduto2);
                     break;
                 case 2:
                     nomeProduto3.setText(produto.getNome());
                     quantidadeProduto3.setText(String.valueOf("Quantidade: " +produto.getQuantidade()));
-                    precoProduto3.setText(String.format("R$ %.2f", produto.getPreco()));
+                    precoProduto3.setText(String.format("Preço: R$ %.2f", produto.getPreco()));
                     DefinirImagens(produto,imagemProduto3);
                     break;
                 case 3:
                     nomeProduto4.setText(produto.getNome());
                     quantidadeProduto4.setText(String.valueOf("Quantidade: " +produto.getQuantidade()));
-                    precoProduto4.setText(String.format("R$ %.2f", produto.getPreco()));
+                    precoProduto4.setText(String.format("Preço: R$ %.2f", produto.getPreco()));
                     DefinirImagens(produto,imagemProduto4);
                     break;
             }
@@ -195,24 +535,21 @@ public class carrinho extends AppCompatActivity {
     private void removerDoCarrinho(Produto produto, int slot) {
         for (int i = 0; i < carr.size(); i++) {
             Produto p = carr.get(i);
-            if (p.getNome().equals(produto.getNome())) {
-                if (p.getQuantidade() > 1) {
-                    // Reduzir a quantidade
-                    p.setQuantidade(p.getQuantidade() - 1);
-                    if (p.getNome().equals("Alface"))
-                    quantidadeProduto1.setText(String.valueOf("Quantidade: " +p.getQuantidade()));
-                    else if (p.getNome().equals("Couve")) {
-                        quantidadeProduto2.setText(String.valueOf("Quantidade: " +p.getQuantidade()));
+            if (p.getNome().equalsIgnoreCase(produto.getNome())) {
+                if (p.getQuantidade() >= 1) {
+                     if (p.getNome().equals("Alface")) {
+                         carr.remove(i);
+                         resetarSlot(slot);
+                     } else if (p.getNome().equals("Couve")) {
+                        carr.remove(i);
+                        resetarSlot(slot);
                     } else if (p.getNome().equals("Cebolinha")) {
-                        quantidadeProduto3.setText(String.valueOf("Quantidade: " +p.getQuantidade()));
+                        carr.remove(i);
+                        resetarSlot(slot);
                     } else if (p.getNome().equals("Cenoura")) {
-                        quantidadeProduto4.setText(String.valueOf("Quantidade: " +p.getQuantidade()));
+                        carr.remove(i);
+                        resetarSlot(slot);
                     }
-                } else {
-                    // Remover o produto do carrinho
-                    carr.remove(i);
-                    // Resetar os textos do slot
-                    resetarSlot(slot);
                 }
                 break;
             }
