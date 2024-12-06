@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/fazenda_urbana"
+        android:background="#FFFFFF"
         android:padding="16dp">
 
         <ScrollView
@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@drawable/bordas"
+                    android:background="@drawable/bordas2"
                     android:layout_marginBottom="8dp">
 
                     <ImageView
@@ -60,12 +60,14 @@
                             android:id="@+id/quantidadeprod1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textStyle="bold"
                             android:text="-" />
 
                         <TextView
                             android:id="@+id/precoprod1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textStyle="bold"
                             android:text="-" />
 
                     </LinearLayout>
@@ -78,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@drawable/bordas"
+                    android:background="@drawable/bordas2"
                     android:layout_marginBottom="8dp">
 
                     <ImageView
@@ -107,12 +109,14 @@
                             android:id="@+id/quantidadeprod2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textStyle="bold"
                             android:text="-" />
 
                         <TextView
                             android:id="@+id/precoprod2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textStyle="bold"
                             android:text="-" />
                     </LinearLayout>
                 </LinearLayout>
@@ -124,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@drawable/bordas"
+                    android:background="@drawable/bordas2"
                     android:layout_marginBottom="8dp">
 
                     <ImageView
@@ -153,12 +157,14 @@
                             android:id="@+id/quantidadeprod3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textStyle="bold"
                             android:text="-" />
 
                         <TextView
                             android:id="@+id/precoprod3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textStyle="bold"
                             android:text="-" />
                     </LinearLayout>
                 </LinearLayout>
@@ -170,7 +176,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="8dp"
-                    android:background="@drawable/bordas">
+                    android:background="@drawable/bordas2">
 
                     <ImageView
                         android:id="@+id/imagemprod4"
@@ -198,12 +204,14 @@
                             android:id="@+id/quantidadeprod4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textStyle="bold"
                             android:text="-" />
 
                         <TextView
                             android:id="@+id/precoprod4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textStyle="bold"
                             android:text="-" />
                     </LinearLayout>
                 </LinearLayout>
@@ -216,10 +224,10 @@
 
                     <TextView
                         android:id="@+id/totalPedido1"
-                        android:layout_width="188dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="170dp"
+                        android:layout_height="34dp"
                         android:layout_marginBottom="1dp"
-                        android:background="@drawable/rounded_edittext"
+                        android:background="@drawable/bordas2"
                         android:gravity="left"
                         android:text="Total: R$ 0.00"
                         android:textSize="18sp"
@@ -236,9 +244,9 @@
                             android:id="@+id/botaoEditarPedido1"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:backgroundTint="#E15243"
+                            android:backgroundTint="#D1740A"
                             android:layout_weight="1"
-                            android:text="Editar Pedido" />
+                            android:text="Editar" />
 
                         <View
                             android:layout_width="16dp"

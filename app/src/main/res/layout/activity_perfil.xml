@@ -6,149 +6,158 @@
     android:layout_height="match_parent"
     tools:context=".perfil">
 
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fillViewport="true"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/fazenda_urbana"
-            android:padding="16dp">
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            tools:ignore="MissingConstraints">
 
-            <!-- Campo Nome -->
 
-            <!-- Campo Telefone -->
-            <EditText
-                android:id="@+id/etNome"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rounded_edittext"
-                android:hint="Nome"
-                android:inputType="textPersonName" />
+                android:layout_height="700dp"
+                android:layout_weight="1"
+                android:padding="8dp">
 
-            <!-- Campo E-mail -->
-            <EditText
-                android:id="@+id/etTelefone"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:layout_marginBottom="6dp"
-                android:background="@drawable/rounded_edittext"
-                android:hint="Telefone"
-                android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/etEmail"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:hint="E-mail"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/rounded_edittext"
-                android:layout_marginBottom="8dp" />
-
-            <!-- Campo Senha -->
-            <EditText
-                android:id="@+id/etSenha"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:hint="Senha"
-                android:inputType="textPassword"
-                android:background="@drawable/rounded_edittext"
-                android:layout_marginBottom="8dp" />
-
-            <!-- Campo CEP e Botão Buscar Endereço -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="8dp">
-
-                <EditText
-                    android:id="@+id/etCep"
-                    android:layout_width="0dp"
-                    android:layout_height="62dp"
-                    android:hint="CEP"
-                    android:inputType="number"
-                    android:layout_weight="1"
-                    android:background="@drawable/rounded_edittext"
-                    android:layout_marginEnd="8dp" />
-
-                <Button
-                    android:id="@+id/btnBuscarEnd"
-                    android:layout_width="wrap_content"
-                    android:backgroundTint="#006400"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Buscar" />
-            </LinearLayout>
+                    android:orientation="vertical">
+                    <!-- Campo Nome -->
 
-            <!-- Campo Logradouro -->
-            <EditText
-                android:id="@+id/etLogradouro"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:hint="Logradouro"
-                android:inputType="text"
-                android:background="@drawable/rounded_edittext"
-                android:layout_marginBottom="8dp" />
+                    <!-- Campo Telefone -->
+                    <EditText
+                        android:id="@+id/etNome"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Nome"
+                        android:inputType="textPersonName" />
 
-            <!-- Campo Número -->
-            <EditText
-                android:id="@+id/etNumero"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:hint="Número"
-                android:inputType="number"
-                android:background="@drawable/rounded_edittext"
-                android:layout_marginBottom="8dp" />
+                    <!-- Campo E-mail -->
+                    <EditText
+                        android:id="@+id/etTelefone"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Telefone"
+                        android:inputType="phone" />
 
-            <!-- Campo Complemento -->
-            <EditText
-                android:id="@+id/etComplemento"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:hint="Complemento"
-                android:inputType="text"
-                android:background="@drawable/rounded_edittext"
-                android:layout_marginBottom="8dp" />
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="E-mail"
+                        android:inputType="textEmailAddress" />
 
-            <!-- Campo Localidade -->
-            <EditText
-                android:id="@+id/etLocalidade"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:hint="Localidade"
-                android:inputType="text"
-                android:background="@drawable/rounded_edittext"
-                android:layout_marginBottom="8dp" />
+                    <!-- Campo Senha -->
+                    <EditText
+                        android:id="@+id/etSenha"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Senha" />
 
-            <!-- Campo Bairro -->
-            <EditText
-                android:id="@+id/etBairro"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:hint="Bairro"
-                android:inputType="text"
-                android:background="@drawable/rounded_edittext"
-                android:layout_marginBottom="8dp" />
+                    <!-- Campo CEP e Botão Buscar Endereço -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
 
-            <!-- Campo Estado -->
-            <EditText
-                android:id="@+id/etEstado"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:hint="Estado"
-                android:inputType="text"
-                android:background="@drawable/rounded_edittext"
-                android:layout_marginBottom="16dp" />
+                        <EditText
+                            android:id="@+id/etCep"
+                            android:layout_width="0dp"
+                            android:layout_height="62dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint="CEP"
+                            android:inputType="number" />
 
+                        <Button
+                            android:id="@+id/btnBuscarEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#006400"
+                            android:text="Buscar" />
+                    </LinearLayout>
+
+                    <!-- Campo Logradouro -->
+                    <EditText
+                        android:id="@+id/etLogradouro"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Logradouro"
+                        android:inputType="text" />
+
+                    <!-- Campo Número -->
+                    <EditText
+                        android:id="@+id/etNumero"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Número"
+                        android:inputType="number" />
+
+                    <!-- Campo Complemento -->
+                    <EditText
+                        android:id="@+id/etComplemento"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Complemento"
+                        android:inputType="text" />
+
+                    <!-- Campo Localidade -->
+                    <EditText
+                        android:id="@+id/etLocalidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Localidade"
+                        android:inputType="text" />
+
+                    <!-- Campo Bairro -->
+                    <EditText
+                        android:id="@+id/etBairro"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Bairro"
+                        android:inputType="text" />
+
+                    <!-- Campo Estado -->
+                    <EditText
+                        android:id="@+id/etEstado"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Estado"
+                        android:inputType="text" />
+
+                </LinearLayout>
+            </ScrollView>
+    <!-- Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
             <!-- Botão Salvar Alterações -->
             <Button
                 android:id="@+id/btnSalvarAlteracoes"
@@ -156,26 +165,26 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#006400"
                 android:text="Salvar Alterações"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="1dp" />
 
             <!-- Botão Voltar ao Início -->
             <Button
                 android:id="@+id/btnVoltarInicio"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:backgroundTint="#A26408"
+                android:layout_marginTop="1dp"
                 android:text="Voltar ao Início" />
 
             <!-- Botão Excluir Usuário -->
             <Button
                 android:id="@+id/btnExcluir"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:backgroundTint="#E15243"
                 android:text="Excluir usuário"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="1dp" />
+    </LinearLayout>
         </LinearLayout>
-
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

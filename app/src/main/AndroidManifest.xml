@@ -13,6 +13,9 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:windowSoftInputMode="adjustResize"
+        android:windowTranslucentStatus="true"
+        android:windowFullscreen="true"
         android:theme="@style/Theme.TestePim"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">

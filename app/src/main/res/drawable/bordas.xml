@@ -1,7 +1,12 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#D4E5B0" /> <!-- Cor de fundo -->
+    <!-- Cor de fundo do layout -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Espessura e cor da borda -->
     <stroke
-        android:width="2dp"
-        android:color="#47692D" /> <!-- Cor da borda -->
-    <corners android:radius="12dp" /> <!-- Borda arredondada -->
+        android:width="0.6dp"
+        android:color="#575757" />
+
+    <!-- Raio dos cantos (opcional, se quiser bordas arredondadas) -->
+    <corners android:radius="8dp" />
 </shape>

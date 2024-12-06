@@ -23,6 +23,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -183,15 +184,27 @@ public class home extends AppCompatActivity {
                         switch (i) {
                             case 0:
                                 ivProduto1.setImageBitmap(imagemBitmap);
+                               /* Glide.with(home.this)
+                                        .load(R.drawable.alface)
+                                        .into(ivProduto1);*/
                                 break;
                             case 1:
                                 ivProduto2.setImageBitmap(imagemBitmap);
+                                /*Glide.with(home.this)
+                                        .load(R.drawable.couve)
+                                        .into(ivProduto2);*/
                                 break;
                             case 2:
                                 ivProduto3.setImageBitmap(imagemBitmap);
+                               /* Glide.with(home.this)
+                                        .load(R.drawable.cebolinha)
+                                        .into(ivProduto3);*/
                                 break;
                             case 3:
                                 ivProduto4.setImageBitmap(imagemBitmap);
+                                /*Glide.with(home.this)
+                                        .load(R.drawable.cenoura)
+                                        .into(ivProduto4);*/
                                 break;
                         }
                     }
