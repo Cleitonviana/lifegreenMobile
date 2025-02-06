@@ -63,7 +63,7 @@ Primeira API desenvolvida → Exigiu muito aprendizado
 Utilização de JDBC ao invés de JPA → Demandou escrever consultas SQL manualmente, aumentando a complexidade
 
 Resolução de bugs e lógica quebrada foi desafiador, mas proporcionou grande aprendizado
-
+********************************************************************************************************************************************************************************************************************
 📸 Screenshots do Projeto
 
 Tela Login:
