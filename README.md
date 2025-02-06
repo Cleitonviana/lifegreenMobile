@@ -1,6 +1,6 @@
 🌱 LifeGreen - Aplicação Mobile para Venda de Hortaliças
 
-LifeGreen é uma aplicação móvel desenvolvida para facilitar a compra de hortaliças, consumindo uma API própria construída em Java.
+LifeGreen é uma aplicação mobile desenvolvida para facilitar a compra de hortaliças, consumindo uma API própria construída em Java.
 ********************************************************************************************************************************************************************************************************************
 🚀 Tecnologias Utilizadas
 
